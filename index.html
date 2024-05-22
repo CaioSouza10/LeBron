@@ -3,13 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CR7</title>
+    <title>LBJ</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anta&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img class="container__fundo" src="Img/lb.png">
-    <a href="#" class="link">PRINCIPAIS NÚMEROS</a>
-   
+    <div class="container">
+        <img class="container__fundo" src="Img/lb.png">
+        <div class="buttons">
+            <a href="#" class="link efeito" id="openModal">TÍTULOS</a>
+            <a href="#" class="link efeito" id="openModalGols">PRINCIPAIS NÚMEROS</a>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="shadows-into-light">TÍTULOS</h2>
+            <p><strong>MIAMI HEAT:</strong><br><br>
+                2011/12 e 2012/2013(NBA)<br><br><br>
+                <strong>CLEVELAND CAVALIERS:</strong><br><br>
+                2015/2016(NBA)<br><br><br>
+                <strong>LAKERS:</strong><br><br>
+                2019/2020(NBA)<br>
+                2023/2024(NBA CUP)<br><br><br>
+                <strong>SELEÇÃO DOS ESTADOS UNIDOS:</strong><br><br>
+                Jogos Olímpicos:<br><br>
+                Medalha de Bronze: 2004<br>
+                Medalha de Ouro: 2008<br>
+                Medalha de Ouro: 2012<br><br>
+                Campeonato Mundial:<br>
+                Medalha de Bronze: 2006<br><br>
+                Copa América de Basquete:<br>
+                Medalha de Ouro: 2007
+        </div>
+    </div>
+
+    <!-- Modal de Gols por clubes/seleção -->
+    <div id="myModalGols" class="modal">
+        <div class="modal-content hidden"> <!-- Adicionando a classe hidden -->
+           <span class="close">&times;</span>
+           <h2 class="shadows-into-light">NÚMEROS/FEITOS</h2>
+            <p> <strong>4x MVP da NBA</strong> - 2011/12, 2012/13, 2015/16 e 2019/20<br><br>
+               <strong> 4x MVP das finais da NBA</strong> - 2011/12, 2012/13, 2015/16 e 2019/20<br><br>
+               <strong> 3x MVP do All-Star Game da NBA</strong> - 2005/06, 2007/08 e 2017/18<br><br>
+               <strong> 19x selecionado para o All-Star Game da NBA</strong> - 2004/05 → 2022/2023<br><br>
+               <strong> 19x selecionado para o time da temporada da NBA</strong> - 2004/05 → 2022/2023<br><br>
+               <strong> 6x selecionado para o time defensivo da temporada da NBA</strong> - 2008/09, 2009/10, 2010/11, 2011/12, 2012/13, 2013/14<br><br>
+               <strong> Novato da temporada da NBA</strong> - 2003/04<br><br>
+               <strong> 19x All-NBA Team:</strong><br>
+                        Primeiro Time: 2006, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018 e 2020<br>
+                        Segundo Time: 2005, 2007 e 2021<br>
+                        Terceiro Time: 2019, 2022 e 2023<br><br>
+               <strong> 6x NBA All-Defensive Team:</strong><br>
+                        Primeiro Time: 2009, 2010, 2011, 2012 e 2013<br>
+                        Segundo Time: 2014<br><br> 
+                        <strong>Recorde de maior pontuador da história da NBA</strong> (51.292 pontos)<br><br>
+            </p>
+           <!-- Conteúdos sobre Gols por clubes/seleção aqui -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
